@@ -1,3 +1,8 @@
+## 編集する場合
+/appの中に新しくディレクトリを作って、その中にpage.jsとcssを配置してください。
+最悪pushしてしまっても戻れるのでどちらでもいいですが、できればブランチ切って作業してもらうか、ディレクトリごと私に渡してもらえると！
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
