@@ -1,11 +1,19 @@
 /* 透過画像 */
 .background {
   background-image: url('/background.png');
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+}
+
+/* PC用のレイアウト調整 */
+@media (min-width: 768px) {
+  .imageContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .header {
@@ -15,7 +23,7 @@
   background-color: #ffffff;
   padding: 10px 20px;
   border-bottom: 1px solid #ddd;
-  height: 50px;
+  height: 80px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -94,6 +102,15 @@
   margin-top: 0;
 }
 
+.imageContainer {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
 .imageWrapper {
   width: 100%;
   height: auto;
@@ -108,6 +125,7 @@
   height: auto;
   object-fit: cover;
   object-position: center;
+  border-radius: 8px;
 }
 
 .textOverlay {
@@ -149,4 +167,110 @@
 
 .exploreButton:hover {
   background-color: #005f99;
+}
+
+.mainSection {
+  text-align: center;
+  padding: 20px;
+}
+
+.mainSection h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.mainSection p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.imageRow {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imageWrapper_half {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  /* max-height: 547px; */
+  margin: 0 auto;
+  position: relative;
+}
+
+.imageWrapper_half p {
+  flex: 1;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.imageWrapper_half img {
+  flex-shrink: 0;
+  width: 200px;
+  height: auto;
+}
+
+.subSection {
+  text-align: center;
+  padding: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.subSection h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.imageGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.kamoSection {
+  text-align: center;
+  padding: 20px;
+}
+
+.kamoSection h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.kamoImages {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.finalSection {
+  text-align: center;
+  padding: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.finalSection h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.finalSection .imageGrid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
