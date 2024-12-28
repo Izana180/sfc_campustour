@@ -47,7 +47,7 @@ export default function Home() {
       {/* 画像と文字 */}
       <div className={styles.main}>
         <div className={styles.imageWrapper}>
-          <img src="/topimage.png" alt="トップ画像" />
+          <Image src="/topimage.png" alt="トップ画像" width={345} height={547}/>
           <div className={styles.textOverlay}>
             <div className={styles.subtitle}>キャンパスツアー</div>
             <div className={styles.title}>
