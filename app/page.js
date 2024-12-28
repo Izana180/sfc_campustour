@@ -8,9 +8,9 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const bottomRef = useRef(null);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  // const toggleMenu = () => {
+  //   setMenuOpen(!menuOpen);
+  // };
 
   const sctollToBottom = () => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth"});
@@ -23,18 +23,18 @@ export default function Home() {
         <div className={styles.logoWrapper}>
           <Image src="/logo.png" alt="ロゴ" width={53} height={53} />
         </div>
-        <button
+        {/* <button
           className={`${styles.menuButton} ${menuOpen ? styles.open : ''}`}
           onClick={toggleMenu}
         >
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
-        </button>
+        </button> */}
       </header>
 
       {/* --- */}
-      {menuOpen && (
+      {/* {menuOpen && (
         <nav className={styles.menu}>
           <ul>
             <li>Home</li>
@@ -42,12 +42,12 @@ export default function Home() {
             <li>Contact</li>
           </ul>
         </nav>
-      )}
+      )} */}
 
       {/* 画像と文字 */}
       <div className={styles.main}>
         <div className={styles.imageWrapper}>
-          <Image src="/topimage.png" alt="トップ画像" width={345} height={547}/>
+          <Image src="/topimage.png" alt="トップ画像" width={345} height={537}/>
           <div className={styles.textOverlay}>
             <div className={styles.subtitle}>キャンパスツアー</div>
             <div className={styles.title}>
