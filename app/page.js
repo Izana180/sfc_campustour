@@ -5,7 +5,7 @@ import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
   const bottomRef = useRef(null);
 
   // const toggleMenu = () => {
