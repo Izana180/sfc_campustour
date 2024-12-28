@@ -72,7 +72,7 @@ export default function Home() {
           <br />
           いくつもあります。
         </p>
-        <div className={styles.imageContainer}>
+        <div className={styles.imageContainer_half}>
           <div className={styles.imageWrapper_half}>
             <Image src="/1.png" alt="鴨池" width={200} height={150} />
             <p>
@@ -93,7 +93,7 @@ export default function Home() {
       {/* quart */}
       <div className={styles.subSection}>
         <h2>施設はたくさん！</h2>
-        <div className={styles.imageContainer}>
+        <div className={styles.imageContainer_quart}>
           <div className={styles.imageWrapper_quart}>
             <Image src="/3.png" alt="メディアセンター" width={200} height={150} />
             <p>メディアセンター</p>
@@ -118,12 +118,20 @@ export default function Home() {
         <h2>皆さんはSFCのこと<br />どれくらい知っていますか？</h2>
         <div className={styles.kamoImages}>
           <Image src="/kamo_1.png" alt="カモ1" width={100} height={100} />
+          <div className={styles.hukidashi}>
+            <p>SFCって他の大学や学部とは少し違うところが多いよね</p>
+          </div>
+        </div>
+        <div className={styles.kamoImages_2}>
+          <div className={styles.hukidashi_2}>
+            <p>この建物って何に使われるんだろう！</p>
+          </div>
           <Image src="/kamo_2.png" alt="カモ2" width={100} height={100} />
         </div>
       </div>
 
       {/* 2nd half */}
-      <div className={styles.finalSection}>
+      <div className={styles.secondHalfSection}>
         <h2>SFCにいるうちに<br />こんな場所使ってみない？</h2>
         <div className={styles.imageContainer}>
           <div className={styles.imageWrapper_half}>
@@ -133,7 +141,7 @@ export default function Home() {
               3Dプリンタ、レーザーカッター、デジタル刺繍ミシン等が利用可能！
             </p>
           </div>
-          <div ref={bottomRef} className={styles.imageWrapper_half}>
+          <div className={styles.imageWrapper_half}>
             <Image src="/8.png" alt="スタジオ" width={200} height={150} />
             <p>
               スタジオ<br />
@@ -143,6 +151,94 @@ export default function Home() {
         </div>
       </div>
 
+      {/* 3rd */}
+      <div className={styles.thirdSection}>
+        <h2>SFCたんけんのいいところ</h2>
+        <div className={styles.infoBox}>
+          <div className={styles.numberAndHeading}>
+            <p className={styles.number}>01</p>
+            <h3>リアルなSFCの情報が得られる</h3>
+          </div>
+          <p className={styles.description}>
+            実際の学生生活や学び、キャンパスライフの詳細がわかり、ＳＦＣでの生活のイメージを具体的に掴むことができます。
+          </p>
+        </div>
+        <div className={styles.infoBox}>
+          <div className={styles.numberAndHeading}>
+            <p className={styles.number}>02</p>
+            <h3>楽しみながら学生生活に役立つ知識を得られる</h3>
+          </div>
+          <p className={styles.description}>
+            謎解きというゲーム形式で学ぶため、楽しみながらＳＦＣの理解を深められます。
+          </p>
+        </div>
+        <div className={styles.infoBox}>
+          <div className={styles.numberAndHeading}>
+            <p className={styles.number}>03</p>
+            <h3>キャンパスの魅力を再発見できる</h3>
+          </div>
+          <p className={styles.description}>
+            探検を通して、ＳＦＣのユニークな施設や環境、歴史など、普段気付きにくい魅力を新しく発見することができます。
+          </p>
+        </div>
+      </div>
+
+      {/* 4th */}
+      <div className={styles.fourthSection}>
+        <h2>SFCを探検してみよう</h2>
+        <div className={styles.stepObject}>
+          <p className={styles.step}>STEP</p>
+          <p className={styles.stepNumber}>01</p>
+          <div className={styles.textContent}>
+            <h3>プレイスタート</h3>
+            <p>1人でも友達とでも！必要なのはSFCをもっと知りたいという気持ちだけ！</p>
+          </div>
+        </div>
+        <div className={styles.zigzagSeparator}></div>
+        <div className={styles.stepObject}>
+          <p className={styles.step}>STEP</p>
+          <p className={styles.stepNumber}>02</p>
+          <div className={styles.textContent}>
+            <h3>SFCを探検する</h3>
+            <p>携帯とマップを見ながらＳＦＣに隠されているクイズを解いていこう</p>
+          </div>
+        </div>
+        <div className={styles.zigzagSeparator}></div>
+        <div className={styles.stepObject}>
+          <p className={styles.step}>STEP</p>
+          <p className={styles.stepNumber}>03</p>
+          <div className={styles.textContent}>
+            <h3>謎を解く</h3>
+            <p>クイズを解いていくと謎を解くヒントが出てくるよ！<br />そのヒントを使って謎を解いてみよう！</p>
+          </div>
+        </div>
+        <div className={styles.zigzagSeparator}></div>
+        <div className={styles.stepObject}>
+          <p className={styles.step}>STEP</p>
+          <p className={styles.stepNumber}>04</p>
+          <div className={styles.textContent}>
+            <h3>リウォードゲット</h3>
+            <p>謎が解けると、学生生協で使えるクーポンがゲットできます！！<br />お昼ご飯や教材などに使えます！</p>
+          </div>
+        </div>
+      </div>
+      {/* 5th */}
+      <div ref={bottomRef} className={styles.fifthSection}>
+        <h2>謎解き問題</h2>
+        <Image src="/nazotoki.png" alt="謎解き問題" width={400} height={300} />
+        <form className={styles.answerForm}>
+          <input
+            type="text"
+            id="answerInput"
+            name="answerInput"
+            className={styles.answerInput}
+            placeholder="答えを入力する"
+          />
+          <button type="submit" className={styles.submitButton}>決定</button>
+        </form>
+        <h3>この謎を解くヒントは<br />ＳＦＣを探検して問題を解くと得られます！</h3>
+        <button className={styles.routeButton}>SFCを探検する！</button>
+      </div>
     </div>
   );
 }
