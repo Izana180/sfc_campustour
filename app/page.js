@@ -213,15 +213,6 @@ export default function Home() {
             <p>クイズを解いていくと謎を解くヒントが出てくるよ！<br />そのヒントを使って謎を解いてみよう！</p>
           </div>
         </div>
-        <div className={styles.zigzagSeparator}></div>
-        <div className={styles.stepObject}>
-          <p className={styles.step}>STEP</p>
-          <p className={styles.stepNumber}>04</p>
-          <div className={styles.textContent}>
-            <h3>リウォードゲット</h3>
-            <p>謎が解けると、学生生協で使えるクーポンがゲットできます！！<br />お昼ご飯や教材などに使えます！</p>
-          </div>
-        </div>
       </div>
       {/* 5th */}
       <div ref={bottomRef} className={styles.fifthSection}>

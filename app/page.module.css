@@ -369,12 +369,13 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); */
 }
 
 .thirdSection h2 {
   font-size: 24px;
   font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .infoBox {
@@ -407,12 +408,14 @@
   font-weight: bold;
   color: #FFFFFF;
   display: inline-block;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .infoBox .description {
   font-size: 14px;
   line-height: 1.6;
   color: #FFFFFF;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .fourthSection {
@@ -420,12 +423,13 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); */
 }
 
 .fourthSection h2 {
   font-size: 24px;
   font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .stepObject {
@@ -448,6 +452,7 @@
   font-size: 18px;
   color: #FFFFFF;
   margin: 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .stepNumber {
@@ -464,6 +469,7 @@
   display: flex;
   margin-left: 20px;
   flex-direction: column;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .textContent h3 {
@@ -558,6 +564,7 @@
   display: inline-block;
   width: 400px;
   padding: 10px 20px;
+  font-family: 'Kaisei Opti', serif;
   font-size: 16px;
   font-weight: bold;
   color: white;

@@ -87,5 +87,6 @@ body {
     margin: 0;
     padding: 0;
     /* background-color: #5fa2cf; */
+    overflow-x: hidden;
     color: white;
 }
