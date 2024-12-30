@@ -217,7 +217,7 @@ export default function Home() {
       {/* 5th */}
       <div ref={bottomRef} className={styles.fifthSection}>
         <h2>謎解き問題</h2>
-        <Image src="/nazotoki.png" alt="謎解き問題" width={400} height={300} />
+        <Image src="/nazotoki.png" alt="謎解き問題" width={380} height={300} />
         <form className={styles.answerForm}>
           <input
             type="text"
