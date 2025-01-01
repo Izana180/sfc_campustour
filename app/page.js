@@ -1,17 +1,17 @@
 "use client";
 
 import { useRef } from 'react';
-// import { useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function Home() {
-  // const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const bottomRef = useRef(null);
 
-  // const toggleMenu = () => {
-  //   setMenuOpen(!menuOpen);
-  // };
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   const sctollToBottom = () => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth"});
@@ -22,20 +22,18 @@ export default function Home() {
       {/* トップバー */}
       <header className={styles.header}>
         <div className={styles.logoWrapper}>
-          <Image src="/logo.png" alt="ロゴ" width={53} height={53} />
+          <Image src="/logo.png" alt="ロゴ" width={80} height={80} />
         </div>
-        {/* <button
+
+        <button
           className={`${styles.menuButton} ${menuOpen ? styles.open : ''}`}
           onClick={toggleMenu}
         >
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
-        </button> */}
-      </header>
+        </button>
 
-      {/* --- */}
-      {/* {menuOpen && (
         <nav className={styles.menu}>
           <ul>
             <li>Home</li>
@@ -43,7 +41,7 @@ export default function Home() {
             <li>Contact</li>
           </ul>
         </nav>
-      )} */}
+      </header>
 
       {/* 画像と文字 */}
       <div className={styles.main}>

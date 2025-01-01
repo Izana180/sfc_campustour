@@ -1,55 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
 
-
-/* ヘッダーのスタイル */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ddd;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
 .logo {
   font-size: 18px;
   font-weight: bold;
-}
-
-.menuButton {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-/* メニューのスタイル */
-.menu {
-  background-color: #f9f9f9;
-  border-top: 1px solid #ddd;
-  padding: 10px 20px;
-}
-
-.menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu li {
-  margin: 10px 0;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* メインコンテンツのスタイル */
-.main {
-  text-align: center;
-  margin-top: 0;
 }
 
 .main img {
@@ -86,7 +40,7 @@ body {
     font-family: 'Kaisei Opti', serif;
     margin: 0;
     padding: 0;
-    /* background-color: #5fa2cf; */
+    background-color: #5fa2cf;
     overflow-x: hidden;
     color: white;
 }
