@@ -6,13 +6,7 @@
   font-weight: bold;
 }
 
-.main img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.title {
+/* .title {
   font-family: 'Kaisei Opti', serif;
   font-size: 4vw;
   font-weight: bold;
@@ -34,7 +28,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
 body {
     font-family: 'Kaisei Opti', serif;

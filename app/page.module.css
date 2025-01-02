@@ -103,10 +103,10 @@
   padding: 10px;
 }
 
-.main {
+/* .main {
   text-align: center;
   margin-top: 0;
-}
+} */
 
 .imageContainer {
   display: flex;
@@ -117,24 +117,24 @@
   padding: 20px;
 }
 
-.imageWrapper {
+/* .imageWrapper {
   width: 100%;
   height: auto;
   max-width: 345px;
   max-height: 547px;
   margin: 0 auto;
   position: relative;
-}
+} */
 
-.imageWrapper img {
+/* .imageWrapper img {
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
-}
+} */
 
-.textOverlay {
+/* .textOverlay {
   position: absolute;
   bottom: -20px;
   left: 50%;
@@ -155,9 +155,9 @@
 .subtitle {
   font-size: 24px;
   white-space: nowrap;
-}
+} */
 
-.exploreButton {
+/* .exploreButton {
   font-family: 'Kaisei Opti', serif;
   background-color: #006d7d;
   color: white;
@@ -169,11 +169,11 @@
   margin-top: 50px;
   text-align: center;
   transition: background-color 0.3s ease;
-}
+} */
 
-.exploreButton:hover {
+/* .exploreButton:hover {
   background-color: #005662;
-}
+} */
 
 .mainSection {
   margin-top: 100px;
@@ -602,7 +602,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    padding: 10px 20px;
+    padding: 0px;
     border-bottom: 1px solid #ddd;
     height: 80px;
     position: sticky;
@@ -621,12 +621,77 @@
   }
   
   .menu li {
-    display: inline-block; /* 横並びにする */
+    display: inline-block;
     margin: 5px;
   }
   
   .menuButton {
-    display: none; /* PC 表示では非表示 */
+    display: none;
   }
 
+  .main {
+    display: flex;
+    justify-content: flex-start; /* 左揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    text-align: left;
+    margin-top: 20px;
+    gap: 20px; /* 子要素間のスペース */
+    width: 100%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.imageWrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.imageWrapper img {
+    width: auto;
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.textOverlay {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 20px; /* 画像との間に余白 */
+}
+
+.title {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 80px;
+    margin-bottom: 10px; /* タイトルとの間隔 */
+}
+
+.exploreButton {
+    font-family: 'Kaisei Opti', serif;
+    background-color: #006d7d;
+    color: white;
+    font-size: 40px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 80px; /* 上部に余白を確保 */
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.exploreButton:hover {
+    background-color: #005662;
+}
 }

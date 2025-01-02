@@ -54,9 +54,9 @@ export default function Home() {
               <br />
               たんけん
             </div>
+            <button className={styles.exploreButton} onClick={sctollToBottom}>すぐ探検する</button>
           </div>
-        </div>
-        <button className={styles.exploreButton} onClick={sctollToBottom}>すぐ探検する</button>
+        </div>  
       </div>
 
       {/* 1st half */}
