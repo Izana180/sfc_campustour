@@ -34,9 +34,9 @@ export default function Home() {
           <span className={styles.bar}></span>
         </button>
 
-        <nav className={styles.menu}>
+        <nav className={`${styles.menu} ${menuOpen ? styles.open : ''}`}>
           <ul>
-            <li>Home</li>
+            <li>SFCたんけん</li>
             <li>About Us</li>
             <li>Contact</li>
           </ul>
