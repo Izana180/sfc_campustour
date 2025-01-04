@@ -2,12 +2,14 @@
 
 import { useRef } from 'react';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const bottomRef = useRef(null);
+  const router = useRouter();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -16,6 +18,10 @@ export default function Home() {
   const sctollToBottom = () => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth"});
   }
+
+  const goToExplore = () => {
+    router.push('/explore');
+  };
 
   return (
     <div className={styles.background}>
@@ -36,7 +42,8 @@ export default function Home() {
 
         <nav className={`${styles.menu} ${menuOpen ? styles.open : ''}`}>
           <ul>
-            <li>SFCたんけん</li>
+            <li>Home</li>
+            <li onClick={goToExplore}>SFCたんけん</li>
             <li>About Us</li>
             <li>Contact</li>
           </ul>
@@ -227,7 +234,7 @@ export default function Home() {
           <button type="submit" className={styles.submitButton}>決定</button>
         </form>
         <h3>この謎を解くヒントは<br />ＳＦＣを探検して問題を解くと得られます！</h3>
-        <button className={styles.routeButton}>SFCを探検する！</button>
+        <button className={styles.routeButton} onClick={goToExplore}>SFCを探検する！</button>
       </div>
     </div>
   );
