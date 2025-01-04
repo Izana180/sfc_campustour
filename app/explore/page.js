@@ -140,10 +140,10 @@ export default function Home() {
       {renderQuizSection(
         'quiz2',
         'Q2: SFCのキャンパス内には、容器を変更することで20円引きになる食事処があります。何というお店でしょう？',
-        '/Quiz01.jpg',
+        '/ladybird.jpg',
         ['Subway', '学生食堂', 'レディバード'],
         'レディバード',
-        '/IMG_4475.jpg',
+        '/ladybird.jpg',
         'レディバードでは、<span style="color: yellow;">『</span>リターナブル容器<span style="color: yellow;">』</span>に変更することでゴミ資源を削減しつつお得に食べることができます。<br />合言葉：回り道'
       )}
 
@@ -160,7 +160,7 @@ export default function Home() {
       {renderQuizSection(
         'quiz4',
         'Q4: 進級するために必要な単位を取れずに原級しても、4年で卒業できる制度がありますが、何というでしょう？',
-        '/Quiz01.jpg',
+        '/quiz2.jpg',
         ['フェニックス', '4年卒業制度', 'ゾンビ'],
         'フェニックス',
         '/quiz2.jpg',
@@ -170,10 +170,10 @@ export default function Home() {
       {renderQuizSection(
         'quiz5',
         'Q5: シグマ館には学生が自由にくつろげるスペースがあります。何という場所でしょう？',
-        '/Quiz01.jpg',
+        '/kamoike.jpg',
         ['鴨池ラウンジ', 'ほっとスペース', '憩いの広場'],
         '鴨池ラウンジ',
-        '/IMG_6151-scaled.jpg',
+        '/kamoike.jpg',
         'コンビニに併設している鴨池<span style="color: yellow;">ラウンジ</span>には仕切りのついたソファや大人数用の机があります。隙間時間に行ってみましょう！'
       )}
 
@@ -190,10 +190,10 @@ export default function Home() {
       {renderQuizSection(
         'quiz7',
         'Q7: SFCではビデオカメラや本格カメラをレンタルすることができます。どこで借りられるでしょう？',
-        '/Quiz01.jpg',
+        '/av.jpg',
         ['サポートセンター', 'AVカウンター', 'カメラの窓口'],
         'AVカウンター',
-        '/IMG_6151-scaled.jpg',
+        '/av.jpg',
         'メディアセンター内の<span style="color: yellow;">AVカウンター</span>では、SFC生であれば無料で<span style="color: yellow;">カメラ</span>をレンタルできます！学生生活の思い出や経験を記録として残してみませんか？'
       )}
     </>
