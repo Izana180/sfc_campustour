@@ -29,6 +29,10 @@ export default function Home() {
     router.push('/explore');
   };
 
+  const goToAboutus = () => {
+    router.push('/aboutus');
+  };
+
   const handleLogoClick = () => {
     setLogoClickCount((prev) => prev + 1);
     if (logoClickCount + 1 === 7) {
@@ -98,7 +102,7 @@ export default function Home() {
           <ul>
             <li onClick={goToHome}>Home</li>
             <li onClick={goToExplore}>SFCたんけん</li>
-            <li>About Us</li>
+            <li onClick={goToAboutus}>About Us</li>
             <li>Contact</li>
           </ul>
         </nav>
@@ -139,7 +143,7 @@ export default function Home() {
         '/Quiz01.jpg',
         ['Subway', '学生食堂', 'レディバード'],
         'レディバード',
-        '/IMG_6151-scaled.jpg',
+        '/IMG_4475.jpg',
         'レディバードでは、<span style="color: yellow;">『</span>リターナブル容器<span style="color: yellow;">』</span>に変更することでゴミ資源を削減しつつお得に食べることができます。<br />合言葉：回り道'
       )}
 

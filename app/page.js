@@ -27,6 +27,10 @@ export default function Home() {
     router.push('/explore');
   };
 
+  const goToAboutus = () => {
+    router.push('/aboutus');
+  };
+
   return (
     <div className={styles.background}>
       {/* トップバー */}
@@ -48,7 +52,7 @@ export default function Home() {
           <ul>
             <li onClick={goToHome}>Home</li>
             <li onClick={goToExplore}>SFCたんけん</li>
-            <li>About Us</li>
+            <li onClick={goToAboutus}>About Us</li>
             <li>Contact</li>
           </ul>
         </nav>
