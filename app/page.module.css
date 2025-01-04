@@ -952,7 +952,7 @@
 }
 
 .feedbackCorrect img {
-  width: 400px;
+  width: 350px;
   height: auto;
 }
 
@@ -1119,5 +1119,8 @@
     height: auto;
   }
 
-
+  .feedbackCorrect img {
+    width: 80%;
+    height: auto;
+  }
 }
