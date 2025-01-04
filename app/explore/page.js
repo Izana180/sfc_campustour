@@ -21,6 +21,10 @@ export default function Home() {
       });
   };
 
+  const goToHome = () => {
+    router.push('/');
+  };
+
   const goToExplore = () => {
     router.push('/explore');
   };
@@ -95,7 +99,7 @@ export default function Home() {
 
         <nav className={`${styles.menu} ${menuOpen ? styles.open : ''}`}>
           <ul>
-            <li>Home</li>
+            <li onClick={goToHome}>Home</li>
             <li onClick={goToExplore}>SFCたんけん</li>
             <li>About Us</li>
             <li>Contact</li>

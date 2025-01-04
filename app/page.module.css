@@ -718,25 +718,6 @@
   }
 }
 
-
-
-
-
-
-.header {
-  font-family: 'Kaisei Opti';
-  overflow: hidden;
-  background: #f9f9f9;
-  margin-bottom: 0px;
-  height: 100px;
-}
-
-@media not all and (min-width: 768px) {
-  .header {
-    height: 60px;
-  }
-}
-
 .logoImage {
   left: 0;
   right: 0;
@@ -886,58 +867,13 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .pcNav {
-    display: none;
-  }
-
-  .exploretitle h2 {
-    margin-top: 100px;
-    color: #F0F0F0;
-    font-size: 32px;
-    border-top: 1px solid #f9f9f9;
-    border-bottom: 1px solid #f9f9f9;
-    padding-bottom: 7px;
-    text-shadow: 1px 2px 3px #808080;
-  }
-
-  .exploretitle h1 {
-    font-family: 'Kaisei Opti';
-    color: #F0F0F0;
-    font-size: 64px;
-    text-shadow: 1px 2px 3px #808080;
-    margin-top: 50px;
-  }
-
-  .exploretitle p {
-    font-family: 'Kaisei Opti';
-    color: #F0F0F0;
-    font-size: 24px;
-    margin-bottom: 50px;
-  }
-
-  .mapImage {
-    width: 360px;
-    height: auto;
-  }
-
-  .quiz {
-    width: 360px;
-    height: auto;
-  }
-
-  .quizImage {
-    width: 360px;
-    height: auto;
-  }
-}
-
 .key {
   color: #fcf923;
 }
 
 .quizContainer {
   margin: auto;
+  align-items: center;
   background: #91CEFA;
   padding: 20px;
   border-radius: 8px;
@@ -956,16 +892,6 @@
   color: #f9f9f9;
   text-align: center;
   margin-bottom: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .quizContainer h2 {
-    font-size: 24px;
-  }
-
-  .quizContainer p {
-    font-size: 20px;
-  }
 }
 
 .quizImage img {
@@ -1003,6 +929,11 @@
   color: #f9f9f9;
 }
 
+.imageSrc {
+  width: 90wh;
+  height: auto;
+}
+
 .feedback {
   margin-top: 20px;
   visibility: hidden;
@@ -1016,6 +947,11 @@
 
 .feedbackCorrect {
   color: green;
+}
+
+.feedbackImage {
+  width: 90wh;
+  height: auto;
 }
 
 .feedbackIncorrect {
@@ -1113,5 +1049,61 @@
   .drawerOpen,
   .navContent {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quizContainer h2 {
+    font-size: 24px;
+  }
+
+  .quizContainer p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pcNav {
+    display: none;
+  }
+
+  .exploretitle h2 {
+    margin-top: 20px;
+    color: #F0F0F0;
+    font-size: 32px;
+    border-top: 1px solid #f9f9f9;
+    border-bottom: 1px solid #f9f9f9;
+    padding-bottom: 7px;
+    text-shadow: 1px 2px 3px #808080;
+  }
+
+  .exploretitle h1 {
+    font-family: 'Kaisei Opti';
+    color: #F0F0F0;
+    font-size: 48px;
+    text-shadow: 1px 2px 3px #808080;
+    margin-top: 20px;
+  }
+
+  .exploretitle p {
+    font-family: 'Kaisei Opti';
+    color: #F0F0F0;
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .mapImage {
+    width: 360px;
+    height: auto;
+  }
+
+  .quiz {
+    width: 360px;
+    height: auto;
+  }
+
+  .quizImage {
+    width: 360px;
+    height: auto;
   }
 }
