@@ -861,6 +861,7 @@
 }
 
 .quizImage {
+  text-align: center;
   width: 720px;
   height: 476px;
   margin: auto;
@@ -930,11 +931,12 @@
 }
 
 .imageSrc {
-  width: 90wh;
+  width: 90vw;
   height: auto;
 }
 
 .feedback {
+  width: 100%;
   margin-top: 20px;
   visibility: hidden;
   text-align: center;
@@ -949,8 +951,13 @@
   color: green;
 }
 
+.feedbackCorrect img {
+  width: 400px;
+  height: auto;
+}
+
 .feedbackImage {
-  width: 90wh;
+  width: 90vw;
   height: auto;
 }
 
@@ -1043,6 +1050,16 @@
   color: #f9f9f9;
 }
 
+.quizImage {
+  width: 100%;
+  height: auto;
+}
+
+.quizImage img {
+  width: 360px;
+  height: auto;
+}
+
 @media screen and (min-width: 768px) {
   .spNav,
   .drawerHidden,
@@ -1102,8 +1119,5 @@
     height: auto;
   }
 
-  .quizImage {
-    width: 360px;
-    height: auto;
-  }
+
 }
