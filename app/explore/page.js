@@ -40,7 +40,7 @@ export default function Home() {
   const handleLogoClick = () => {
     setLogoClickCount((prev) => prev + 1);
     if (logoClickCount + 1 === 7) {
-      router.push('/hint');
+      router.push('https://web.sfc.keio.ac.jp/~t22934mw/wpx/');
     }
   };
 
