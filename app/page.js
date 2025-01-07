@@ -35,6 +35,7 @@ export default function Home() {
     <div className={styles.background}>
       {/* トップバー */}
       <header className={styles.header}>
+      <meta name="google-site-verification" content="l4PIkKSMhJnbBIfMKfFdz15zZnv_-x-68qL6_1Oeds4" />
         <div className={styles.logoWrapper}>
           <Image src="/logo.png" alt="ロゴ" width={80} height={80} />
         </div>
