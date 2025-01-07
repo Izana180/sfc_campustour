@@ -33,6 +33,10 @@ export default function Home() {
     router.push('/aboutus');
   };
 
+  const goToContact = () => {
+    router.push('https://docs.google.com/forms/d/e/1FAIpQLSeJJO5fPLEKyEM5DIxeH8Nojnn_P5dzH-SwyapnMmbfDZk2Eg/viewform');
+  };
+
   const handleLogoClick = () => {
     setLogoClickCount((prev) => prev + 1);
     if (logoClickCount + 1 === 7) {
@@ -103,7 +107,7 @@ export default function Home() {
             <li onClick={goToHome}>Home</li>
             <li onClick={goToExplore}>SFCたんけん</li>
             <li onClick={goToAboutus}>About Us</li>
-            <li>Contact</li>
+            <li onClick={goToContact}>Contact</li>
           </ul>
         </nav>
       </header>
