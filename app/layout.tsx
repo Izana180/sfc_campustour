@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "SFCたんけん",
-  description: "campus tour",
+  description: "SFCを探索しながらキャンパスについて知ろう！",
 };
 
 export default function RootLayout({
