@@ -8,6 +8,7 @@ import styles from './page.module.css';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [logoClickCount, setLogoClickCount] = useState(0);
   const bottomRef = useRef(null);
   const router = useRouter();
 
@@ -35,13 +36,20 @@ export default function Home() {
     router.push('https://docs.google.com/forms/d/e/1FAIpQLSeJJO5fPLEKyEM5DIxeH8Nojnn_P5dzH-SwyapnMmbfDZk2Eg/viewform');
   };
 
+  const handleLogoClick = () => {
+    setLogoClickCount((prev) => prev + 1);
+    if (logoClickCount + 1 === 7) {
+      router.push('https://web.sfc.keio.ac.jp/~t22934mw/wpx/');
+    }
+  };
+
   return (
     <div className={styles.background}>
       {/* トップバー */}
       <header className={styles.header}>
       <meta name="google-site-verification" content="l4PIkKSMhJnbBIfMKfFdz15zZnv_-x-68qL6_1Oeds4" />
         <div className={styles.logoWrapper}>
-          <Image src="/logo.png" alt="ロゴ" width={80} height={80} />
+          <Image src="/logo.png" alt="ロゴ" width={80} height={80} onClick={handleLogoClick}/>
         </div>
 
         <button

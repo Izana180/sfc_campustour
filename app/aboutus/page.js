@@ -28,13 +28,20 @@ export default function Home() {
     const goToContact = () => {
         router.push('https://docs.google.com/forms/d/e/1FAIpQLSeJJO5fPLEKyEM5DIxeH8Nojnn_P5dzH-SwyapnMmbfDZk2Eg/viewform');
     };
+
+    const handleLogoClick = () => {
+        setLogoClickCount((prev) => prev + 1);
+        if (logoClickCount + 1 === 7) {
+          router.push('https://web.sfc.keio.ac.jp/~t22934mw/wpx/');
+        }
+    };    
   
     return (
         <div className={styles.aboutbackground}>
             {/* トップバー */}
             <header className={styles.header}>
                 <div className={styles.logoWrapper}>
-                    <Image src="/logo.png" alt="ロゴ" width={80} height={80} />
+                    <Image src="/logo.png" alt="ロゴ" width={80} height={80} onClick={handleLogoClick}/>
                 </div>
         
                 <button
