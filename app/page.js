@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import styles from './page.module.css';
+import Head from 'next/head';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -243,14 +244,25 @@ export default function Home() {
       {/* 5th */}
       <div ref={bottomRef} className={styles.fifthSection}>
         <h2>謎解き問題</h2>
-        <Image src="/nazotoki.png" alt="謎解き問題" width={380} height={300} />
-        <form className={styles.answerForm}>
+        <Image src="/QQQ.png" alt="謎解き問題" width={380} height={300} />
+        <form 
+          className={styles.answerForm}
+          onSubmit={(e) =>{
+            e.preventDefault();
+            const answer = e.target.answerInput.value.trim();
+            if (answer === "ふくざわゆきち") {
+              window.location.href = "https://web.sfc.keio.ac.jp/~s23476yt/clear/nazoex.html";
+            } else {
+              alert("残念！");
+            }
+          }}
+        >
           <input
             type="text"
             id="answerInput"
             name="answerInput"
             className={styles.answerInput}
-            placeholder="答えを入力する"
+            placeholder="答えを入力する(ひらがな)"
           />
           <button type="submit" className={styles.submitButton}>決定</button>
         </form>
