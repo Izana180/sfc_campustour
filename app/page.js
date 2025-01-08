@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import styles from './page.module.css';
-import Head from 'next/head';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
