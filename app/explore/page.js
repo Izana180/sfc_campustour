@@ -138,7 +138,7 @@ export default function Home() {
         ['SFC', 'FAB', 'MCR'],
         'FAB',
         '/Q1_A.jpg',
-        '<span style="color: yellow;">FAB</span>では3Dプリンターやレーザーカッターが無料で利用でき、様々なモノ作りを体験することができます。<br />合言葉：不動'
+        '<span style="color: yellow;">FAB</span>では3Dプリンターやレーザーカッターが無料で利用でき、様々なモノ作りを体験することができます。<br />合言葉：ふどう'
       )}
 
       {renderQuizSection(
@@ -148,7 +148,7 @@ export default function Home() {
         ['Subway', '学生食堂', 'レディバード'],
         'レディバード',
         '/Q2_A.jpg',
-        'レディバードでは、<span style="color: yellow;">『</span>リターナブル容器<span style="color: yellow;">』</span>に変更することでゴミ資源を削減しつつお得に食べることができます。<br />合言葉：回り道'
+        'レディバードでは、<span style="color: yellow;">『</span>リターナブル容器<span style="color: yellow;">』</span>に変更することでゴミ資源を削減しつつお得に食べることができます。<br />合言葉：まわりみち'
       )}
 
       {renderQuizSection(
@@ -158,7 +158,7 @@ export default function Home() {
         ['メディアセンター', '食堂', '生協'],
         '食堂',
         '/Q3_A.jpg',
-        '食堂で無料でレジャーシートが借りられます。気分転換に鴨池前の芝生でランチをしてみましょう！<br />合言葉：サザンカ'
+        '食堂で無料でレジャーシートが借りられます。気分転換に鴨池前の芝生でランチをしてみましょう！<br />合言葉：さざんか'
       )}
 
       {renderQuizSection(
@@ -168,7 +168,7 @@ export default function Home() {
         ['フェニックス', '4年卒業制度', 'ゾンビ'],
         'フェニックス',
         '/Q4_A.JPG',
-        'DSや体育、研究会などによって<span style="color: yellow;">故意</span>でなく原級してしまうSFC生が多々見受けられます。このような事にならないように履修はしっかり考えましょう'
+        'DSや体育、研究会などによって<span style="color: yellow;">故意</span>でなく原級してしまうSFC生が多々見受けられます。このような事にならないように履修はしっかり考えましょう。<br />合言葉：どくりつじそん'
       )}
 
       {renderQuizSection(
@@ -178,7 +178,7 @@ export default function Home() {
         ['鴨池ラウンジ', 'ほっとスペース', '憩いの広場'],
         '鴨池ラウンジ',
         '/Q5_A.png',
-        'コンビニに併設している鴨池<span style="color: yellow;">ラウンジ</span>には仕切りのついたソファや大人数用の机があります。隙間時間に行ってみましょう！'
+        'コンビニに併設している鴨池<span style="color: yellow;">ラウンジ</span>には仕切りのついたソファや大人数用の机があります。隙間時間に行ってみましょう！<br />合言葉：きちじつ'
       )}
 
       {renderQuizSection(
@@ -188,7 +188,7 @@ export default function Home() {
         ['メディカルセンター', 'デザインスタジオ', 'ジム'],
         'ジム',
         '/Q6_A.jpg',
-        'ガンマ館は体育館<span style="color: yellow;">アリーナ</span>だけではなく、学生が無料で利用できるジムがあります！運動したい時に行ってみましょう！'
+        'ガンマ館は体育館<span style="color: yellow;">アリーナ</span>だけではなく、学生が無料で利用できるジムがあります！運動したい時に行ってみましょう！<br />合言葉：ちゆ'
       )}
 
       {renderQuizSection(
@@ -198,7 +198,7 @@ export default function Home() {
         ['サポートセンター', 'AVカウンター', 'カメラの窓口'],
         'AVカウンター',
         '/Q7_A.jpg',
-        'メディアセンター内の<span style="color: yellow;">AVカウンター</span>では、SFC生であれば無料で<span style="color: yellow;">カメラ</span>をレンタルできます！学生生活の思い出や経験を記録として残してみませんか？'
+        'メディアセンター内の<span style="color: yellow;">AVカウンター</span>では、SFC生であれば無料で<span style="color: yellow;">カメラ</span>をレンタルできます！学生生活の思い出や経験を記録として残してみませんか？<br />合言葉：まてき'
       )}
     </>
   );

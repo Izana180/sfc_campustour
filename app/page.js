@@ -243,7 +243,7 @@ export default function Home() {
       {/* 5th */}
       <div ref={bottomRef} className={styles.fifthSection}>
         <h2>謎解き問題</h2>
-        <Image src="/QQQ.png" alt="謎解き問題" width={380} height={300} />
+        <Image src="/ABCDEFG.png" alt="謎解き問題" width={380} height={300} />
         <form 
           className={styles.answerForm}
           onSubmit={(e) =>{
